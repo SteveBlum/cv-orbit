@@ -214,12 +214,8 @@ p {
         margin-bottom: 10px;
         color: $text-grey;
     }
-    
-    .project-title {
-        font-size: 16px;
-        font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 5px;
+    .details {
+      margin-bottom: 0;
     }
     .projects-section {
         .intro {
@@ -227,37 +223,62 @@ p {
         }
         .item {
             margin-bottom: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .project-image {
+                order: 2;
+                width: 50px;
+            }
+            .project-title {
+                font-size: 16px;
+                font-weight: 400;
+                margin-right: 20px;
+                width: 100px;
+            }
+            .project-tagline {
+                flex: 1;
+                white-space: pre-line;
+            }
         }
     }
-    
 }
-
 
 .skillset {
     .item {
         margin-bottom: 15px;
         overflow: hidden;
+        position: relative;
+        height: 20px;
     }
+
     .level-title {
         font-size: 14px;
         margin-top: 0;
-        margin-bottom: 12px;
+        margin-bottom: 0;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
-    
-    
+
     .level-bar {
         height: 12px;
         background: $smoky-white;
         @include border-radius(2px);
+        position: absolute;
+        left: 100px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
     
     .theme-progress-bar {
-	    background: lighten($theme-color, 10%);
+        background: lighten($theme-color, 10%);
     }
 }
-
-
-
 
 .footer {
     padding: 30px;

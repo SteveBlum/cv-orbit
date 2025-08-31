@@ -20,12 +20,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #6e3852;
+  color: rgb(110.3148148148, 56.1851851852, 81.537037037);
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-  color: #3c1e2c;
+  color: rgb(59.6296296296, 30.3703703704, 44.0740740741);
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -ms-transition: all 0.4s ease-in-out;
@@ -161,7 +161,7 @@ p {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
-  color: #6e3852;
+  color: rgb(110.3148148148, 56.1851851852, 81.537037037);
   position: relative;
   margin-top: 0;
   margin-bottom: 20px;
@@ -180,7 +180,7 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  background: #6e3852;
+  background: rgb(110.3148148148, 56.1851851852, 81.537037037);
   text-align: center;
   font-size: 16px;
   position: relative;
@@ -219,27 +219,48 @@ p {
   margin-bottom: 10px;
   color: #97AAC3;
 }
-.main-wrapper .project-title {
-  font-size: 16px;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 5px;
+.main-wrapper .details {
+  margin-bottom: 0;
 }
 .main-wrapper .projects-section .intro {
   margin-bottom: 30px;
 }
 .main-wrapper .projects-section .item {
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main-wrapper .projects-section .item .project-image {
+  order: 2;
+  width: 50px;
+}
+.main-wrapper .projects-section .item .project-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+  width: 100px;
+}
+.main-wrapper .projects-section .item .project-tagline {
+  flex: 1;
+  white-space: pre-line;
 }
 
 .skillset .item {
   margin-bottom: 15px;
   overflow: hidden;
+  position: relative;
+  height: 20px;
 }
 .skillset .level-title {
   font-size: 14px;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .skillset .level-bar {
   height: 12px;
@@ -252,9 +273,14 @@ p {
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
+  position: absolute;
+  left: 100px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .skillset .theme-progress-bar {
-  background: #b67091;
+  background: rgb(182.1111111111, 111.8888888889, 144.7777777778);
 }
 
 .footer {
@@ -295,3 +321,5 @@ p {
     margin-bottom: 0;
   }
 }
+
+/*# sourceMappingURL=orbit-4.css.map */

@@ -1,0 +1,21 @@
+{
+  "name": "cv-orbit",
+  "version": "1.0.0",
+  "description": "My CV based on xriley/Orbit-Theme",
+  "scripts": {
+    "css:compile": "sass assets/scss/:assets/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteveBlum/cv-orbit.git"
+  },
+  "author": "Steve Blum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SteveBlum/cv-orbit/issues"
+  },
+  "homepage": "https://github.com/SteveBlum/cv-orbit#readme",
+  "devDependencies": {
+    "sass": "^1.91.0"
+  }
+}
